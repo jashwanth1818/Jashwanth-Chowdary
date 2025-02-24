@@ -1,0 +1,257 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNYfh3sVr2eoIxCSRdbzHa0",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/jashwanth1818/Jashwanth-Chowdary/blob/main/PYTHON%20CODES\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "num=int(input(\"enter a number:\"))\n",
+        "if num%2==0:\n",
+        "  print(\"Even\")\n",
+        "else:\n",
+        "  print(\"odd\")\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "MzUyTwbxZlJA",
+        "outputId": "b633f50d-a990-4348-9fd1-80170857c8dc"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter a number:5\n",
+            "odd\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "num=int(input(\"enter the number\"))\n",
+        "if num>0:\n",
+        "  print(num,\"is a positive number\")\n",
+        "elif num<0:\n",
+        "  print(num,\"is a negative number\")\n",
+        "else:\n",
+        "  print(num,\"is zero\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "lCusSQDQbnei",
+        "outputId": "478b5272-8e95-4cea-880a-f9c496c1f122"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter the number-61\n",
+            "-61 is a negative number\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import math\n",
+        "n=int(input(\"enter the number\"))\n",
+        "result=math.sqrt(n)\n",
+        "print(\"square root of\",n,\"is:\",result)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "iSxCfYKxfPB1",
+        "outputId": "bde0f9f9-1cab-4008-9657-932d94a251ad"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter the number36\n",
+            "square root of 36 is: 6.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "def print_string_separately():\n",
+        "    input_string = input(\"Enter a string: \")\n",
+        "\n",
+        "    for char in input_string:\n",
+        "        print(char)\n",
+        "\n",
+        "print_string_separately()\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "p6c0qjsnja8j",
+        "outputId": "c80e7282-e943-4e46-97e0-c9c5c2ee996c"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a string: RULE NUMBER 1\n",
+            "R\n",
+            "U\n",
+            "L\n",
+            "E\n",
+            " \n",
+            "N\n",
+            "U\n",
+            "M\n",
+            "B\n",
+            "E\n",
+            "R\n",
+            " \n",
+            "1\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def strings_together():\n",
+        "  string1=input(\"enter the string:\")\n",
+        "  string2=input(\"enter the string:\")\n",
+        "\n",
+        "  print(  string1 + \" \" + string2)\n",
+        "\n",
+        "strings_together()\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "AWrcB3QxjxdV",
+        "outputId": "a7d71141-467d-4fc5-f910-76bb09a854ff"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter the string:HELLO\n",
+            "enter the string:WORLD\n",
+            "HELLO WORLD\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "num_string=(input(\"enter a number:\"))\n",
+        "num_reversed=num_string[::-1]\n",
+        "print(num_reversed)\n",
+        "\n",
+        "#slicing"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "nEetuDgAlx1h",
+        "outputId": "c0f01547-8e33-4bc1-c000-46ba055b37b9"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter a number:789456123\n",
+            "321654987\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def print_natural_numbers(n):\n",
+        "    for i in range(1, n + 1):\n",
+        "        print(i)\n",
+        "\n",
+        "n = 10\n",
+        "print_natural_numbers(n)\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "rterEATrs4Hb",
+        "outputId": "1f6a99da-eb07-4eb3-baee-782821c072a9"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n",
+            "2\n",
+            "3\n",
+            "4\n",
+            "5\n",
+            "6\n",
+            "7\n",
+            "8\n",
+            "9\n",
+            "10\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
